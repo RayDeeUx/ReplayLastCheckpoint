@@ -4,18 +4,6 @@
 
 using namespace geode::prelude;
 
-/*
-	original code from GDMO written by Maxnu and SpaghettDev, which is published
-	under the GPLv3 license. code re-use + adaptation compatible with LGPLv2
-	per the GNU license compatibility matrix seen here:
-	
-	https://www.gnu.org/licenses/gpl-faq.en.html#AllCompatibility
-	
-	and here:
-	
-	https://www.gnu.org/licenses/gpl-faq.en.html#compat-matrix-footnote-7
-*/
-
 class $modify(MyEndLevelLayer, EndLevelLayer) {
 	void onLastCheckpoint(cocos2d::CCObject* sender) {
 		Manager::getSharedInstance()->isLevelComplete = false;
