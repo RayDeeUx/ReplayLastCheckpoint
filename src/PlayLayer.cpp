@@ -26,9 +26,11 @@ class $modify(MyPlayLayer, PlayLayer) {
 		Utils::checkForCompactEndscreen();
 		PlayLayer::onQuit();
 	}
+	#ifndef GEODE_IS_MACOS
 	void onExit() {
 		Manager::getSharedInstance()->isPracticeMode = this->m_isPracticeMode;
 		Utils::checkForCompactEndscreen();
 		PlayLayer::onExit();
 	}
+	#endif
 };
