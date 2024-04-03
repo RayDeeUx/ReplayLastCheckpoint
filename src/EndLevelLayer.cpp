@@ -55,8 +55,7 @@ class $modify(MyEndLevelLayer, EndLevelLayer) {
 	}
 	#ifndef GEODE_IS_MOBILE
 	void keyDown(cocos2d::enumKeyCodes p0) {
-		auto manager = Manager::getSharedInstance();
-		if (Utils::get("enabled") && Utils::get("spacebar") && p0 == enumKeyCodes::KEY_Space && manager->isLevelComplete && manager->isPracticeMode && this->getChildByIDRecursive("button"_spr) != nullptr && PlayLayer::get() != nullptr) {
+		if (Utils::get("enabled") && Utils::get("spacebar") && p0 == enumKeyCodes::KEY_Space && this->getChildByIDRecursive("button"_spr) != nullptr && PlayLayer::get() != nullptr) {
 			MyEndLevelLayer::onLastCheckpoint(nullptr);
 		} else { EndLevelLayer::keyDown(p0); }
 	}
