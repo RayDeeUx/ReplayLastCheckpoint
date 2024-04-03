@@ -53,7 +53,7 @@ class $modify(MyEndLevelLayer, EndLevelLayer) {
 			buttonMenu->addChild(checkpointButton);
 		}
 	}
-	#ifndef GEODE_IS_MOBILE
+	#ifdef GEODE_IS_WINDOWS
 	void keyDown(cocos2d::enumKeyCodes p0) {
 		if (Utils::get("enabled") && Utils::get("spacebar") && p0 == enumKeyCodes::KEY_Space && this->getChildByIDRecursive("button"_spr) != nullptr && PlayLayer::get() != nullptr) {
 			MyEndLevelLayer::onLastCheckpoint(nullptr);

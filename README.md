@@ -2,7 +2,7 @@
 
 Recreation of the "Replay Last Checkpoint" module from MegaHack and GDMO, primarily intended for non-Windows platforms.
 
-Also adds a spacebar keybind to restart from the last checkpoint (Windows and macOS only, will not work with MegaHack!).
+Also adds a spacebar keybind to restart from the last checkpoint (Windows only, will not work with MegaHack!).
 
 Demos:
 
