@@ -14,13 +14,13 @@
 	"settings": {
 		"enabled": {
 			"name": "Enabled",
-			"description": "Toggles the mod.",
+			"description": "Toggles the mod.\n\n(The mod remains dormant if you have MHv8 loaded or if you have GDMO's equivalent feature enabled.)",
 			"type": "bool",
 			"default": true
 		},
 		"spacebar": {
 			"name": "Space Bar to Replay",
-			"description": "Enables the spacebar as a shortcut to restarting the level from the last checkpoint, because apparently GDMO forgot about this.\n(MegaHack too, but don't fret: MHv8 completely ignores whether or not you've toggled this. I wish that sentence was a joke.)\n\nWhat do you mean, \"it's not that deep, bro\"?",
+			"description": "Enables the spacebar as a shortcut to restarting the level from the last checkpoint, because apparently GDMO forgot about this.\n(MHv8 completely ignores whether or not you've toggled this.\nI wish that sentence was a joke.)\n\nWhat do you mean, \"it's not that deep, bro\"?",
 			"type": "bool",
 			"default": true,
 			"platforms": ["windows"]
